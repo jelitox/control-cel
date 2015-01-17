@@ -16,10 +16,11 @@ class CreatePersonasTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('cedula',12);
+			$table->string('rif',12)->nullable;
 			$table->string('nombres');
 			$table->string('apellidos');
-			$table->string('telefonos');
-			$table->string('celular');
+			$table->string('telefonos')->nullable;
+			$table->string('celular')->nullable;
 			$table->string('sexo',1);
 			$table->date('fecha_nacimiento');
 			$table->text('direccion');

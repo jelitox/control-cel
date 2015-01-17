@@ -3,7 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreatePerfilesTable extends Migration {
+class CreateEmpresasTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,12 @@ class CreatePerfilesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('perfiles', function(Blueprint $table)
+		Schema::create('empresas', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('perfil');
-			$table->text('descripcion');
-			$table->string('slug');
-			$table->boolean('activo');
+			$table->string('rif',12);
+			$table->string('nombre',70);
+			$table->string('razon_social',70);
 			$table->timestamps();
 		});
 	}
@@ -31,7 +30,7 @@ class CreatePerfilesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('perfiles');
+		Schema::drop('empresas');
 	}
 
 }

@@ -15,6 +15,7 @@ class CreateUsuariosTable extends Migration {
 		Schema::create('usuarios', function(Blueprint $table)
 		{
 			$table->increments('id');
+			
 			$table->string('login',20);
 			$table->string('password');						
 			$table->timestamp('lastlogon');
@@ -30,7 +31,7 @@ class CreateUsuariosTable extends Migration {
 			//************ relaciones *******************//
 			$table->foreign('persona_id')->references('id')->on('personas');
 			$table->foreign('perfil_id')->references('id')->on('perfiles');
-			//$table->foreign('estado_usuario_id')->references('id')->on('estado_usuarios');
+			$table->foreign('estado_usuario_id')->references('id')->on('estado_usuarios');
 			$table->foreign('empresa_id')->references('id')->on('empresas');
 			$table->timestamps();
 		});

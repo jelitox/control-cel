@@ -19,3 +19,10 @@ composer update --dev
 
 /*Actualizar las migraciones */
 	php artisan migrate:refresh
+
+/*********************************************/
+USANDO EL PAQUETE DE MIGRACIONES DE JEFREY/WAY
+/********************************************/
+
+/* Generar las migraciones, Palabras reservadas prefijo CREATE y TABLE
+	php artisan generate:migration create_posts_table

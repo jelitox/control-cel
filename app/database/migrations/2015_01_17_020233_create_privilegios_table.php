@@ -16,7 +16,6 @@ class CreatePrivilegiosTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('privilegio');
-			$table->string('slug');
 			$table->timestamps();
 		});
 	}

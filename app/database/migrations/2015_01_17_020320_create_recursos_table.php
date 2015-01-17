@@ -17,7 +17,6 @@ class CreateRecursosTable extends Migration {
 			$table->increments('id');
 			$table->text('descripcion');
 			$table->boolean('activo');
-			$table->string('slug');
 			$table->integer('recurso_id')->unsigned();
 			$table->timestamps();
 			//Recursividad de la tabla con el mismo

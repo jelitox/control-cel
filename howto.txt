@@ -1,5 +1,8 @@
 /* Actualizar composer una vez añadidos algunos plugins nuevos*/
-composer update --dev
+	composer update --dev
+
+/* Cargar las clases una vez cambiado algo dentro del composer
+	composer dump-autoload
 
 /*****************************************************/
 /******************MIGRACIONES************************/
@@ -26,3 +29,14 @@ USANDO EL PAQUETE DE MIGRACIONES DE JEFREY/WAY
 
 /* Generar las migraciones, Palabras reservadas prefijo CREATE y TABLE
 	php artisan generate:migration create_posts_table
+
+/*****************************************************/
+/******************  MODELOS  ************************/
+/*****************************************************/
+
+/* Generar los modelos con paquere de JEFREY WAY
+	/* Coloca el modelo dentro de la carpeta model 
+	php artisan generate:model NombreModelo
+
+	/* Si se quiere cambiar la ruta 
+	php artisan generate:model --path="/vagrant/control-cel/app/Security/Entities/" Privilegio (example)

@@ -1,0 +1,21 @@
+/* Actualizar composer una vez añadidos algunos plugins nuevos*/
+composer update --dev
+
+/*****************************************************/
+/******************MIGRACIONES************************/
+/*****************************************************/
+===== EL ORDEN EN QUE SE CREAN LAS MIGRACIONES ES 
+===== IMPORTANTEEEEE  SE EJECUTAN ASI ====
+
+
+/*Instalar las migraciones en Laravel */
+	php artisan migrate:install 
+
+/* Generar migracion*/
+	php artisan generate:migration create_empresas_table
+
+/*Migrar las tablas a la bd*/
+	php artisan migrate
+
+/*Actualizar las migraciones */
+	php artisan migrate:refresh

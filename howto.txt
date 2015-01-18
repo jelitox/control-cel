@@ -40,3 +40,19 @@ USANDO EL PAQUETE DE MIGRACIONES DE JEFREY/WAY
 
 	/* Si se quiere cambiar la ruta 
 	php artisan generate:model --path="/vagrant/control-cel/app/Security/Entities/" Privilegio (example)
+
+
+
+=====================
+=========ESTUDIAR====
+=====================
+* Inyeccion de dependecia Laravel  Controllers
+
+
+
+=========================
+========= PENDIENTES ====
+=========================
+17/01/15
+	*Instalar paquete Laravel-Blade (sublimetext)
+	*Instalar completador de namespaces (Sublimetext)
